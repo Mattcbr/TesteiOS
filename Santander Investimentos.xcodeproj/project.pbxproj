@@ -14,6 +14,9 @@
 		2F193C172205FA2B009533CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F193C152205FA2B009533CC /* LaunchScreen.storyboard */; };
 		2F193C222205FA2B009533CC /* Santander_InvestimentosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F193C212205FA2B009533CC /* Santander_InvestimentosTests.swift */; };
 		2F193C2D2205FA2B009533CC /* Santander_InvestimentosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F193C2C2205FA2B009533CC /* Santander_InvestimentosUITests.swift */; };
+		2FAE9E8D220CA6DD00B9F2B6 /* InvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE9E8C220CA6DD00B9F2B6 /* InvestmentViewController.swift */; };
+		2FAE9E8F220CA91000B9F2B6 /* RequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE9E8E220CA91000B9F2B6 /* RequestMaker.swift */; };
+		D4743F93575F38DB866A85BB /* Pods_Santander_Investimentos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C0F059C3D612EB29D66CC8 /* Pods_Santander_Investimentos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06B57FB6D3190D629843B2EA /* Pods-Santander Investimentos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santander Investimentos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Santander Investimentos/Pods-Santander Investimentos.debug.xcconfig"; sourceTree = "<group>"; };
+		14C0F059C3D612EB29D66CC8 /* Pods_Santander_Investimentos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Santander_Investimentos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F193C092205FA29009533CC /* Santander Investimentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Santander Investimentos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F193C0C2205FA29009533CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F193C0E2205FA29009533CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		2F193C282205FA2B009533CC /* Santander InvestimentosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Santander InvestimentosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F193C2C2205FA2B009533CC /* Santander_InvestimentosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Santander_InvestimentosUITests.swift; sourceTree = "<group>"; };
 		2F193C2E2205FA2B009533CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FAE9E8C220CA6DD00B9F2B6 /* InvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentViewController.swift; sourceTree = "<group>"; };
+		2FAE9E8E220CA91000B9F2B6 /* RequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMaker.swift; sourceTree = "<group>"; };
+		E384D2D73A5D2EFC691E1294 /* Pods-Santander Investimentos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santander Investimentos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Santander Investimentos/Pods-Santander Investimentos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4743F93575F38DB866A85BB /* Pods_Santander_Investimentos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,8 @@
 				2F193C202205FA2B009533CC /* Santander InvestimentosTests */,
 				2F193C2B2205FA2B009533CC /* Santander InvestimentosUITests */,
 				2F193C0A2205FA29009533CC /* Products */,
+				9CD614C200E6A34446CC79D9 /* Pods */,
+				B1B2D86EB37F80E34AAF2C4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +108,9 @@
 		2F193C0B2205FA29009533CC /* Santander Investimentos */ = {
 			isa = PBXGroup;
 			children = (
+				2FAE9E8B220CA5A200B9F2B6 /* Core */,
+				2FAE9E8A220CA59000B9F2B6 /* Models */,
+				2FAE9E87220CA49300B9F2B6 /* Views */,
 				2F193C0C2205FA29009533CC /* AppDelegate.swift */,
 				2F193C0E2205FA29009533CC /* ViewController.swift */,
 				2F193C102205FA2A009533CC /* Main.storyboard */,
@@ -125,6 +139,62 @@
 			path = "Santander InvestimentosUITests";
 			sourceTree = "<group>";
 		};
+		2FAE9E87220CA49300B9F2B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FAE9E89220CA4B100B9F2B6 /* ContactView */,
+				2FAE9E88220CA49E00B9F2B6 /* InvestmentView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FAE9E88220CA49E00B9F2B6 /* InvestmentView */ = {
+			isa = PBXGroup;
+			children = (
+				2FAE9E8C220CA6DD00B9F2B6 /* InvestmentViewController.swift */,
+			);
+			path = InvestmentView;
+			sourceTree = "<group>";
+		};
+		2FAE9E89220CA4B100B9F2B6 /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContactView;
+			sourceTree = "<group>";
+		};
+		2FAE9E8A220CA59000B9F2B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2FAE9E8B220CA5A200B9F2B6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2FAE9E8E220CA91000B9F2B6 /* RequestMaker.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9CD614C200E6A34446CC79D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06B57FB6D3190D629843B2EA /* Pods-Santander Investimentos.debug.xcconfig */,
+				E384D2D73A5D2EFC691E1294 /* Pods-Santander Investimentos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1B2D86EB37F80E34AAF2C4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C0F059C3D612EB29D66CC8 /* Pods_Santander_Investimentos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F193C312205FA2B009533CC /* Build configuration list for PBXNativeTarget "Santander Investimentos" */;
 			buildPhases = (
+				021AFBD70FA5E4EEE601FA1E /* [CP] Check Pods Manifest.lock */,
 				2F193C052205FA29009533CC /* Sources */,
 				2F193C062205FA29009533CC /* Frameworks */,
 				2F193C072205FA29009533CC /* Resources */,
+				A1658E57C6F0A5F7FFC6C203 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,12 +323,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		021AFBD70FA5E4EEE601FA1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Santander Investimentos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1658E57C6F0A5F7FFC6C203 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Santander Investimentos/Pods-Santander Investimentos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Santander Investimentos/Pods-Santander Investimentos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F193C052205FA29009533CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAE9E8D220CA6DD00B9F2B6 /* InvestmentViewController.swift in Sources */,
 				2F193C0F2205FA29009533CC /* ViewController.swift in Sources */,
+				2FAE9E8F220CA91000B9F2B6 /* RequestMaker.swift in Sources */,
 				2F193C0D2205FA29009533CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +551,13 @@
 		};
 		2F193C322205FA2B009533CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B57FB6D3190D629843B2EA /* Pods-Santander Investimentos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAQ759ZX7;
 				INFOPLIST_FILE = "Santander Investimentos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +571,13 @@
 		};
 		2F193C332205FA2B009533CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E384D2D73A5D2EFC691E1294 /* Pods-Santander Investimentos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAQ759ZX7;
 				INFOPLIST_FILE = "Santander Investimentos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
