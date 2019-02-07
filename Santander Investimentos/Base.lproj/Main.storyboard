@@ -13,7 +13,7 @@
         <!--Contato-->
         <scene sceneID="Ahb-WU-hQs">
             <objects>
-                <viewController id="h4o-xG-zTX" sceneMemberID="viewController">
+                <viewController id="h4o-xG-zTX" customClass="InvestmentViewController" customModule="Santander_Investimentos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5V0-bI-GEf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
