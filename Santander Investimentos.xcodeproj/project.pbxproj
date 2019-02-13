@@ -16,7 +16,9 @@
 		2F193C2D2205FA2B009533CC /* Santander_InvestimentosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F193C2C2205FA2B009533CC /* Santander_InvestimentosUITests.swift */; };
 		2F8D2F98220CAD8A0043368A /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2F97220CAD8A0043368A /* FieldModel.swift */; };
 		2F8D2F9A220CAEA10043368A /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2F99220CAEA10043368A /* Parser.swift */; };
-		2FAE9E8D220CA6DD00B9F2B6 /* InvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE9E8C220CA6DD00B9F2B6 /* InvestmentViewController.swift */; };
+		2F8D2F9C220CC16D0043368A /* ContactViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2F9B220CC16D0043368A /* ContactViewInteractor.swift */; };
+		2F8D2F9E220CC1860043368A /* ContactViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2F9D220CC1860043368A /* ContactViewPresenter.swift */; };
+		2FAE9E8D220CA6DD00B9F2B6 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE9E8C220CA6DD00B9F2B6 /* ContactViewController.swift */; };
 		2FAE9E8F220CA91000B9F2B6 /* RequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE9E8E220CA91000B9F2B6 /* RequestMaker.swift */; };
 		D4743F93575F38DB866A85BB /* Pods_Santander_Investimentos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C0F059C3D612EB29D66CC8 /* Pods_Santander_Investimentos.framework */; };
 /* End PBXBuildFile section */
@@ -56,7 +58,9 @@
 		2F193C2E2205FA2B009533CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F8D2F97220CAD8A0043368A /* FieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModel.swift; sourceTree = "<group>"; };
 		2F8D2F99220CAEA10043368A /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		2FAE9E8C220CA6DD00B9F2B6 /* InvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentViewController.swift; sourceTree = "<group>"; };
+		2F8D2F9B220CC16D0043368A /* ContactViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewInteractor.swift; sourceTree = "<group>"; };
+		2F8D2F9D220CC1860043368A /* ContactViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewPresenter.swift; sourceTree = "<group>"; };
+		2FAE9E8C220CA6DD00B9F2B6 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		2FAE9E8E220CA91000B9F2B6 /* RequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMaker.swift; sourceTree = "<group>"; };
 		E384D2D73A5D2EFC691E1294 /* Pods-Santander Investimentos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santander Investimentos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Santander Investimentos/Pods-Santander Investimentos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,7 +159,9 @@
 		2FAE9E88220CA49E00B9F2B6 /* InvestmentView */ = {
 			isa = PBXGroup;
 			children = (
-				2FAE9E8C220CA6DD00B9F2B6 /* InvestmentViewController.swift */,
+				2FAE9E8C220CA6DD00B9F2B6 /* ContactViewController.swift */,
+				2F8D2F9B220CC16D0043368A /* ContactViewInteractor.swift */,
+				2F8D2F9D220CC1860043368A /* ContactViewPresenter.swift */,
 			);
 			path = InvestmentView;
 			sourceTree = "<group>";
@@ -381,12 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FAE9E8D220CA6DD00B9F2B6 /* InvestmentViewController.swift in Sources */,
+				2F8D2F9E220CC1860043368A /* ContactViewPresenter.swift in Sources */,
+				2FAE9E8D220CA6DD00B9F2B6 /* ContactViewController.swift in Sources */,
 				2F193C0F2205FA29009533CC /* ViewController.swift in Sources */,
 				2F8D2F9A220CAEA10043368A /* Parser.swift in Sources */,
 				2F8D2F98220CAD8A0043368A /* FieldModel.swift in Sources */,
 				2FAE9E8F220CA91000B9F2B6 /* RequestMaker.swift in Sources */,
 				2F193C0D2205FA29009533CC /* AppDelegate.swift in Sources */,
+				2F8D2F9C220CC16D0043368A /* ContactViewInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

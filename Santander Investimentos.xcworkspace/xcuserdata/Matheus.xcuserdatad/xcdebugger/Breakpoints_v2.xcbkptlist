@@ -2,4 +2,70 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Santander Investimentos/Views/InvestmentView/ContactViewController.swift"
+            timestampString = "571598136.017995"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "paintTextField(textField:withColor:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Santander_Investimentos.ContactViewController.paintTextField(textField: __C.UITextField, withColor: __C.CGColorRef) -&gt; ()"
+                  moduleName = "Santander Investimentos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Matheus/Documents/GitHub/Pessoal/Challenges/Santander/TesteiOS/Santander%20Investimentos/Views/InvestmentView/ContactViewController.swift"
+                  timestampString = "571597705.558288"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "194"
+                  endingLineNumber = "194"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIView) -&gt; () in Santander_Investimentos.ContactViewController.paintTextField(textField: __C.UITextField, withColor: __C.CGColorRef) -&gt; ()"
+                  moduleName = "Santander Investimentos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Matheus/Documents/GitHub/Pessoal/Challenges/Santander/TesteiOS/Santander%20Investimentos/Views/InvestmentView/ContactViewController.swift"
+                  timestampString = "571597705.560887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "195"
+                  endingLineNumber = "195"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Santander Investimentos/Views/InvestmentView/ContactViewController.swift"
+            timestampString = "571598136.018495"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "textFieldEditingDidChange(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

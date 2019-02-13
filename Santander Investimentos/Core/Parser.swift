@@ -20,7 +20,10 @@ class Parser {
             
             let type = fieldInfo["type"] as? Int ?? 10
             let message = fieldInfo["message"] as? String ?? "Default"
-            let typeField = fieldInfo["typeField"] as? Int ?? 0
+            var typeField = fieldInfo["typefield"] as? Int ?? 0
+            if (fieldInfo["typefield"] as? String == "telnumber"){
+                typeField = 2
+            }
             let hidden = fieldInfo["hidden"] as? Bool ?? false
             let topSpacing = fieldInfo["topSpacing"] as? Double ?? 10.0
             let show = fieldInfo["show"] as? Int ?? 10

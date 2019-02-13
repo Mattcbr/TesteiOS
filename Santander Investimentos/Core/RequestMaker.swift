@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 
 protocol RequestDelegate: class{
-    func didLoadFields(fields:[FieldModel])
-    func didFailToLoadFields(withError error: Error)
+    func didLoadContactFields(fields:[FieldModel])
+    func didFailToLoadContactFields(withError error: Error)
 }
 
 class RequestMaker {
@@ -34,9 +34,9 @@ class RequestMaker {
                 
             case .success(let JSON):
                 let fieldsArray = self.responseParser.parseContactView(response: JSON)
-                self.delegate?.didLoadFields(fields:fieldsArray)
+                self.delegate?.didLoadContactFields(fields:fieldsArray)
             case .failure(let error):
-                self.delegate?.didFailToLoadFields(withError: error)
+                self.delegate?.didFailToLoadContactFields(withError: error)
             }
         }
     }
